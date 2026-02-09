@@ -40,5 +40,20 @@
   
   
   /* Stabilisco, con una funzione, se la somma dei due numeri è pari/dispari */
+    /* Raccolgo dati */
+    let result;
+  function isItEven(number) {
 
+    if (number % 2 === 0) {
+      result = true;
+    } else {
+      result = false;
+    }
+
+    return result;
+  }
+
+  isItEven(numbersSum);
+  console.log(result);
+  
   /* Dichiaro chi ha vinto */
