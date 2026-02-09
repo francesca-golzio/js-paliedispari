@@ -35,7 +35,8 @@
 
   /* Sommo i due numeri */
 
-  
+  numbersSum = userNumb + pcNumb;
+  console.log(numbersSum);
   
   
   /* Stabilisco, con una funzione, se la somma dei due numeri è pari/dispari */
