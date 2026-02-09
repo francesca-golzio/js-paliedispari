@@ -5,7 +5,7 @@
 
   /* Chiedo all' Utente di rispondere a due prompt */
     /* 1 - Scegli pari o dispari*/
-    const userChoice = prompt('Choose and type "true" or "false"');
+    const userChoice = prompt('Choose and type "even" or "odd"');
     console.log(userChoice);
     
     
