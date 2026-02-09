@@ -6,7 +6,7 @@
   /* Chiedo all’utente di inserire una parola */
     
     /* creo un prompt e lo salvo in una variabile */
-      const userWord = prompt('Type a word, please');
+      const userWord = 'anna'/* prompt('Type a word, please') */;
       //console.log(userWord);
 
 
@@ -57,3 +57,5 @@
 }
 isItPalindrom(userWord);
 //console.log(message);
+
+
