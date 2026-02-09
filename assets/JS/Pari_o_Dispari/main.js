@@ -45,9 +45,9 @@
   function isItEven(number) {
 
     if (number % 2 === 0) {
-      result = true;
+      result = even;
     } else {
-      result = false;
+      result = odd;
     }
 
     return result;
@@ -57,3 +57,4 @@
   console.log(result);
   
   /* Dichiaro chi ha vinto */
+
