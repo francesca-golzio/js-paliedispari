@@ -27,11 +27,26 @@
 
     /* Unisco le lettere ottenute (elementi dell'array) per riformare una parola, che salvo in una variabile */
     reversedWord = reversedLettersOrder.join('');
-    console.log(reversedWord);
+    //console.log(reversedWord);
     
+    /* Confronto le parole per verificare "Palindroma?" */
+      /* Trasformo le due parole in lowercase (per non avere problemi di case sensitive) e salvo i risultati in altrettante variabili*/
+      const userWordToLowCase = userWord.toLowerCase();
+      //console.log(userWordToLowCase);  
+      const reversedWordToLowCase = reversedWord.toLowerCase();
+      //console.log(reversedWordToLowCase);
 
-
-
+      /* confronto le parole e restituisco un messaggio (salvato in una variabile*/
+      let message;
+      if(reversedWordToLowCase === userWordToLowCase) {
+        message = `${userWord} è una parola palindroma`;
+        //console.log(message);        
+        document.writeln(message);        
+      } else {
+        message = `${userWord} non è una parola palindroma`;
+        //console.log(message);        
+        document.writeln(message);        
+      }
 
 
 
