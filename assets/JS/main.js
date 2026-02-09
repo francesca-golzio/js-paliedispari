@@ -19,14 +19,16 @@
       /* prendo ogni lettera nell'ordine */
       /* e la salvo in una variabile */
       const character = userWord.charAt(i);
-      console.log(character);
+      //console.log(character);
       /* aggiungo il valore (lettera) all'array creato prima */
       reversedLettersOrder.unshift(character);
-      console.log(reversedLettersOrder);      
+      //console.log(reversedLettersOrder);      
     }
 
-
-
+    /* Unisco le lettere ottenute (elementi dell'array) per riformare una parola, che salvo in una variabile */
+    reversedWord = reversedLettersOrder.join('');
+    console.log(reversedWord);
+    
 
 
 
