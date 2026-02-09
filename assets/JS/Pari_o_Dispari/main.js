@@ -58,6 +58,13 @@
   
   /* Dichiaro chi ha vinto */
 
-if (userChoice == result) {
-  
-}
+  let winnerIs;
+
+  if (userChoice == result) {
+    winnerIs = 'Congratulation: you win!';
+  } else {
+    winnerIs = 'Sorry, PC wins!';
+  }
+
+  //console.log(winnerIs);
+  document.writeln(winnerIs);
