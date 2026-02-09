@@ -4,23 +4,29 @@
 /* 🪞 Palidroma */
 
   /* Chiedo all’utente di inserire una parola */
-
+    
     /* creo un prompt e lo salvo in una variabile */
-    const userWord = 'Anna'/* prompt('Type a word, please') */
-    //console.log(userWord);
+      const userWord = prompt('Type a word, please');
+      //console.log(userWord);
+
 
   /* Creo una funzione, per capire se la parola inserita è palindroma */
     
+    /* Raccolgo i valori */
+    let message;
+
+  function isItPalindrom(word) {
+
     /* Creo un array vuoto in cui conservare le lettere nell'ordine inverso */  
     let reversedLettersOrder = [];
 
     /* All'interno di un ciclo for()... */    
-    for(let i = 0; i < userWord.length; i++) {
-      /* prendo ogni lettera nell'ordine */
+    for(let i = 0; i < word.length; i++) {
+      /* ... prendo ogni lettera nell'ordine */
       /* e la salvo in una variabile */
-      const character = userWord.charAt(i);
+      const character = word.charAt(i);
       //console.log(character);
-      /* aggiungo il valore (lettera) all'array creato prima */
+      /* ... aggiungo il valore (lettera) all'array creato prima */
       reversedLettersOrder.unshift(character);
       //console.log(reversedLettersOrder);      
     }
@@ -30,31 +36,24 @@
     //console.log(reversedWord);
     
     /* Confronto le parole per verificare "Palindroma?" */
+      
       /* Trasformo le due parole in lowercase (per non avere problemi di case sensitive) e salvo i risultati in altrettante variabili*/
-      const userWordToLowCase = userWord.toLowerCase();
-      //console.log(userWordToLowCase);  
+      const wordToLowCase = word.toLowerCase();
+      //console.log(wordToLowCase);  
       const reversedWordToLowCase = reversedWord.toLowerCase();
       //console.log(reversedWordToLowCase);
 
       /* confronto le parole e restituisco un messaggio (salvato in una variabile*/
-      let message;
-      if(reversedWordToLowCase === userWordToLowCase) {
-        message = `${userWord} è una parola palindroma`;
+      if(reversedWordToLowCase === wordToLowCase) {
+        message = `${word} è una parola palindroma`;
         //console.log(message);        
         document.writeln(message);        
       } else {
-        message = `${userWord} non è una parola palindroma`;
+        message = `${word} non è una parola palindroma`;
         //console.log(message);        
         document.writeln(message);        
-      }
-
-
-
-
-
-
-
-
-
-
-
+      };
+    return message;
+}
+isItPalindrom(userWord);
+//console.log(message);
